@@ -8637,6 +8637,15 @@ h1, h2, h3, h4, h5,
     width: 100%;
     position: relative;
     z-index: 1; }
+  .ftco-about .img-about .img.profile-photo {
+    min-height: 560px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    @media (max-width: 991.98px) {
+      .ftco-about .img-about .img.profile-photo {
+        min-height: 420px;
+        background-size: cover; } }
 
 .ftco-about ul.about-info {
   display: inline-block;
