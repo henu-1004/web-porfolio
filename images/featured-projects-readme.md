@@ -11,4 +11,4 @@ Upload PNG preview images for the Featured Projects cards using these filenames:
 - `unet-semantic-segmentation.png`
 - `obstacle-detection-app.png`
 
-Each image is displayed inside a fixed 1.56:1 frame with `object-fit: contain`, so the full original image remains visible without cropping.
+Each image is displayed inside a 1.56:1 cover frame, so wide screenshots work best.
