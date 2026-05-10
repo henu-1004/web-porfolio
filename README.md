@@ -1,4 +1,4 @@
-서현우 웹 포트폴리오 <src="https://henu-1004.github.io/web-porfolio/">
+서현우 웹 포트폴리오 "https://henu-1004.github.io/web-porfolio/"
 
 <p align="center">
   <h1 align="center">Developer's Portfolio ✨</h1>
