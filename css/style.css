@@ -9699,27 +9699,11 @@ textarea.form-control {
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  color: rgba(0, 0, 0, 0.72);
+  color: #10225f;
   font-size: 18px;
-  line-height: 1.8;
-}
-
-.award-highlight {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.award-highlight span {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  padding: 10px 18px;
-  background: rgba(62, 100, 255, 0.1);
-  color: #2446d8;
   font-weight: 700;
-  box-shadow: 0 8px 24px rgba(62, 100, 255, 0.12);
+  line-height: 1.8;
+  text-shadow: 0 2px 14px rgba(255, 255, 255, 0.8);
 }
 
 .hero-links .btn {
@@ -9846,14 +9830,6 @@ textarea.form-control {
   .award-highlight {
     flex-direction: column;
     align-items: center;
-  }
-
-  .tech-badge {
-    width: 105px;
-    height: 105px;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
   }
 
   .project-card {
@@ -10003,34 +9979,87 @@ textarea.form-control {
 }
 
 .skill-category {
-  padding: 28px;
-  border-radius: 22px;
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #ffffff 0%, #f7f9ff 100%);
+  border: 1px solid rgba(62, 100, 255, 0.12);
+  box-shadow: 0 18px 45px rgba(19, 35, 95, 0.09);
+}
+
+.skill-category::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: -90px;
+  right: -60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(62, 100, 255, 0.18), rgba(62, 100, 255, 0));
+}
+
+.skill-category h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #14245f;
+}
+
+.skill-category h3::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3e64ff, #8aa2ff);
 }
 
 .skill-category .row {
-  row-gap: 14px;
+  position: relative;
+  row-gap: 16px;
 }
 
 .tech-badge {
+  position: relative;
   width: 100%;
-  min-height: 54px;
+  min-height: 58px;
   height: auto;
-  border-radius: 14px;
-  padding: 12px 14px;
-  background: #f8f9ff;
-  border: 1px solid rgba(62, 100, 255, 0.12);
-  box-shadow: none;
+  border-radius: 18px;
+  padding: 13px 14px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(62, 100, 255, 0.14);
+  box-shadow: 0 10px 26px rgba(19, 35, 95, 0.08);
   font-size: 15px;
+  font-weight: 800;
   text-align: center;
   color: #24304f;
+  backdrop-filter: blur(8px);
+}
+
+.tech-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #3e64ff;
+  box-shadow: 0 0 0 5px rgba(62, 100, 255, 0.1);
 }
 
 .tech-badge:hover {
-  transform: translateY(-4px);
-  background: #3e64ff;
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #3e64ff, #6e89ff);
+  border-color: transparent;
   color: #fff;
+  box-shadow: 0 18px 35px rgba(62, 100, 255, 0.25);
+}
+
+.tech-badge:hover::before {
+  background: #fff;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.18);
 }
 
 .experience-list {
