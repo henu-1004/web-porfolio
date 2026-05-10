@@ -9693,3 +9693,170 @@ textarea.form-control {
   background: linear-gradient(135deg, #ffb347, #ffcc33);
   color: #111;
 }
+
+/* Personal portfolio customizations */
+.hero-intro {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.award-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.award-highlight span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: rgba(62, 100, 255, 0.1);
+  color: #2446d8;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(62, 100, 255, 0.12);
+}
+
+.hero-links .btn {
+  margin: 4px;
+}
+
+.about-points p {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.award-card {
+  width: 100%;
+  border-radius: 18px;
+  background: #fff;
+  border-top: 4px solid #3e64ff;
+  margin-bottom: 30px;
+  transition: all 0.25s ease;
+}
+
+.award-card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.award-card .date {
+  color: #3e64ff;
+  font-weight: 800;
+}
+
+.award-card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.skill-category {
+  margin-bottom: 42px;
+}
+
+.skill-category h3 {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.project-card-grid > [class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  background: #fff;
+  padding: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+}
+
+.project-card.compact {
+  padding: 24px;
+}
+
+.project-icon {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+.project-card p {
+  flex: 1;
+  color: #555;
+  line-height: 1.7;
+}
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 18px;
+}
+
+.stack-list span {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #f3f5ff;
+  color: #3e64ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.project-card a,
+.award-card a {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 10px;
+  margin-top: 6px;
+  font-weight: 800;
+  color: #3e64ff;
+}
+
+.contact-section .box {
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+  .hero-intro {
+    font-size: 16px;
+  }
+
+  .award-highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-badge {
+    width: 105px;
+    height: 105px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+}
