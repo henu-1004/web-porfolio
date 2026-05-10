@@ -83,9 +83,10 @@ h1, h2, h3, h4, h5,
 		padding-right: 15px;
 	}
 	.container{
-		width: 1110px;
+		width: 100%;
+		max-width: 1180px;
 		margin: 0 auto;
-		padding: 0;
+		padding: 0 15px;
 		@include media-breakpoint-up(lg){
 		}
 	}
@@ -94,6 +95,7 @@ h1, h2, h3, h4, h5,
 		color: $black;
 		padding-top: .7rem;
 		padding-bottom: .7rem;
+		font-size: 22px;
 		&:hover, &:focus{
 			color: $black !important;
 		}
@@ -103,18 +105,22 @@ h1, h2, h3, h4, h5,
 	}
 	
 	.navbar-nav {
+		flex-wrap: nowrap;
+		white-space: nowrap;
 		@include media-breakpoint-down(md){
+			flex-wrap: wrap;
+			white-space: normal;
 			padding-bottom: 20px;
 			// margin-left: 20px !important;
 			margin-right: 0;
 		}
 		> .nav-item {
 			> .nav-link {
-				font-size: 16px;
+				font-size: 14px;
 				padding-top: .7rem;
 				padding-bottom: .7rem;
-				padding-left: 20px;
-				padding-right: 20px;
+				padding-left: 10px;
+				padding-right: 10px;
 				color: $black;
 				font-weight: 400;
 				opacity: 1!important;
@@ -645,6 +651,8 @@ h1, h2, h3, h4, h5,
 .ftco-about{
 	.img-about{
 		width: 100%;
+		max-width: 430px;
+		margin: 0 auto;
 		z-index: 0;
 		position: relative;
 		.img{
@@ -652,6 +660,13 @@ h1, h2, h3, h4, h5,
 			width: 100%;
 			position: relative;
 			z-index: 1;
+		}
+		.about-photo{
+			min-height: 520px;
+			border-radius: 22px;
+			@include media-breakpoint-down(sm){
+				min-height: 360px;
+			}
 		}
 	}
 	ul.about-info{
