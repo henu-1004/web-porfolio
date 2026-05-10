@@ -1968,3 +1968,32 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+/* Requested visibility and photo framing refinements */
+.ftco-about .img-about .about-photo {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-color: #f7f8fb;
+}
+
+.slider-text p.hero-intro {
+  color: #000000 !important;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 16px;
+  padding: 14px 18px;
+  text-shadow: none;
+}
+
+.hero-links .btn.btn-mail.btn-outline-white,
+.hero-links .btn.btn-mail.btn-outline-white:focus,
+.hero-links .btn.btn-mail.btn-outline-white:hover {
+  background: #ffffff !important;
+  border-color: #111111 !important;
+  color: #111111 !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+.hero-links .btn.btn-mail.btn-outline-white:hover {
+  background: #111111 !important;
+  color: #ffffff !important;
+}
