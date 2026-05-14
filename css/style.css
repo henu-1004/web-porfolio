@@ -10262,38 +10262,57 @@ textarea.form-control {
   color: #1f2937;
   -webkit-box-shadow: 0 10px 28px rgba(17, 24, 39, 0.10);
   box-shadow: 0 10px 28px rgba(17, 24, 39, 0.10);
-  font-size: clamp(16px, 2.2vw, 22px);
+  font-size: clamp(15px, 1.9vw, 21px);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   opacity: 0;
-  -webkit-transform: translateY(12px);
-  -ms-transform: translateY(12px);
-  transform: translateY(12px);
-  -webkit-animation: capability-fade-in 0.7s ease forwards;
-  animation: capability-fade-in 0.7s ease forwards;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  -webkit-transform: translateY(16px);
+  -ms-transform: translateY(16px);
+  transform: translateY(16px);
+  -webkit-animation: capability-reveal 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: capability-reveal 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: opacity, filter, transform;
 }
 
 .hero-capability:nth-child(2) {
-  -webkit-animation-delay: 0.28s;
-  animation-delay: 0.28s;
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s;
 }
 
 .hero-capability:nth-child(3) {
-  -webkit-animation-delay: 0.56s;
-  animation-delay: 0.56s;
+  -webkit-animation-delay: 0.64s;
+  animation-delay: 0.64s;
 }
 
-@-webkit-keyframes capability-fade-in {
+@-webkit-keyframes capability-reveal {
+  60% {
+    opacity: 1;
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+  }
+
   to {
     opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
-@keyframes capability-fade-in {
+@keyframes capability-reveal {
+  60% {
+    opacity: 1;
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+  }
+
   to {
     opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -10304,6 +10323,8 @@ textarea.form-control {
     -webkit-animation: none;
     animation: none;
     opacity: 1;
+    -webkit-filter: none;
+    filter: none;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
