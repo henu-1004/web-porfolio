@@ -1020,6 +1020,10 @@ h1, h2, h3, h4, h5,
 		color: $white;
 		font-size: 40px;
 		font-weight: 900;
+		&.hireme-title{
+			font-size: clamp(13px, 2.7vw, 32px);
+			white-space: nowrap;
+		}
 		span{
 			color: $secondary;
 		}
