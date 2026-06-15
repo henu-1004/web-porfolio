@@ -10333,11 +10333,18 @@ textarea.form-control {
 
 /* Hero scroll cue and research achievements */
 .hero-scroll-cue {
-  position: relative;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  margin-top: 24px;
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.hero-scroll-cue .mouse-icon {
+  margin: 0;
 }
 
 .research-achievements-page {
@@ -10347,12 +10354,10 @@ textarea.form-control {
 .research-achievement-card {
   position: relative;
   display: flex;
-  gap: 24px;
-  padding: 30px;
-  border: 1px solid #edf0ff;
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 12px 35px rgba(31, 41, 55, 0.08);
+  gap: 20px;
+  padding: 24px 0 24px 24px;
+  border-left: 3px solid #3e64ff;
+  background: transparent;
 }
 
 .research-achievement-marker {
@@ -10402,9 +10407,14 @@ textarea.form-control {
   font-weight: 700;
 }
 
+.research-achievement-description {
+  margin-bottom: 0;
+  line-height: 1.9;
+}
+
 @media (max-width: 767.98px) {
   .hero-scroll-cue {
-    margin-top: 18px;
+    margin-top: 24px;
   }
 
   .research-achievements-page {
@@ -10412,8 +10422,8 @@ textarea.form-control {
   }
 
   .research-achievement-card {
-    gap: 16px;
-    padding: 22px 18px;
+    gap: 14px;
+    padding: 20px 0 20px 16px;
   }
 
   .research-achievement-marker {
