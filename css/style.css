@@ -10330,3 +10330,100 @@ textarea.form-control {
     transform: none;
   }
 }
+
+/* Hero scroll cue and research achievements */
+.hero-scroll-cue {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin-top: 24px;
+}
+
+.research-achievements-page {
+  padding-top: 5em;
+}
+
+.research-achievement-card {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  padding: 30px;
+  border: 1px solid #edf0ff;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(31, 41, 55, 0.08);
+}
+
+.research-achievement-marker {
+  display: flex;
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #3e64ff;
+  color: #fff;
+}
+
+.research-achievement-content {
+  min-width: 0;
+}
+
+.research-achievement-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.research-achievement-meta .date,
+.research-role {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #edf0ff;
+  color: #3e64ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.research-conference {
+  margin-bottom: 8px;
+  color: #3e64ff;
+  font-weight: 600;
+}
+
+.research-achievement-card h3 {
+  margin-bottom: 12px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .hero-scroll-cue {
+    margin-top: 18px;
+  }
+
+  .research-achievements-page {
+    padding-top: 3em;
+  }
+
+  .research-achievement-card {
+    gap: 16px;
+    padding: 22px 18px;
+  }
+
+  .research-achievement-marker {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .research-achievement-card h3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
