@@ -2009,45 +2009,11 @@ textarea.form-control {
   margin: 0;
 }
 
-.research-achievements-page {
-  padding-top: 5em;
-}
-
-.research-achievement-card {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  padding: 24px 0 24px 24px;
-  border-left: 3px solid $primary;
-  background: transparent;
-}
-
-.research-achievement-marker {
-  display: flex;
-  flex: 0 0 50px;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: $primary;
-  color: $white;
-}
-
-.research-achievement-description {
-  margin-bottom: 0;
-  line-height: 1.9;
-}
-
 @media (max-width: 767.98px) {
   .hero-scroll-cue {
     margin-top: 24px;
   }
 
-  .research-achievement-card {
-    gap: 14px;
-    padding: 20px 0 20px 16px;
-  }
 }
 
 
