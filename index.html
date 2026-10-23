@@ -54,7 +54,8 @@
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 				<div class="col-lg-9 col-md-10 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
-						<h1>서현우</h1>
+						<span id="gc-visits" class="hero-visits" hidden></span>
+<h1>서현우</h1>
 						<div class="hero-capabilities" aria-label="핵심 역량">
 							<span class="hero-capability">웹 서비스를 구현하는 개발자</span>
 							<span class="hero-capability">데이터 흐름을 이해하는 개발자</span>
@@ -597,6 +598,11 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
+<script>
+(function(){var el=document.getElementById('gc-visits');if(!el)return;var p=location.pathname;if(/\/index\.html$/.test(p))p=p.replace(/index\.html$/,'');
+fetch('https://henujobs.goatcounter.com/counter/'+encodeURIComponent(p)+'.json',{cache:'no-store'}).then(function(r){return r.status===404?{count:'0'}:r.ok?r.json():Promise.reject(r.status)})
+.then(function(d){var n=Number(String(d.count).replace(/\D/g,'')||0);el.innerHTML='<span class="hv-dot"></span>'+n.toLocaleString('en-US')+' visitors';el.hidden=false}).catch(function(){})})();
+</script>
 <script data-goatcounter="https://henujobs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body>
 
 </html>
